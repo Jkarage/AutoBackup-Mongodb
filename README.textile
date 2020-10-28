@@ -1,0 +1,44 @@
+h1.Mongodb Database backup automator
+
+
+* The Scripts Creates a Database Backup file  for your *mongodb* Database.
+* The script uses the following variables which are placed in the .bashrc file(you can use your own method to create permanent variables)
+
+
+h2. The Variables (Mysql database)
+
+
+* MONGO_USERNAME
+* MONGO_PASSWD
+* MONGO_BACKUP_PATH
+* MONGO_DATABASE_NAME
+
+
+h2. Put these in the .bashrc file in your root directory(after modifying).
+
+
+* MPNGO_USERNAME="yourmongodbusername" <br>
+* export MONGO_USERNAME <br>
+* export PATH=$PATH:MONGO_USERNAME/bin <br>
+
+
+* MONGO_PASSWD="yourmongodbpassword"
+* export MONGO_PASSWD <br>
+* export PATH=$PATH:MONGO_PASSWD/bin <br>
+
+
+* MONGO_BACKUP_PATH="The directory you want to save your backups"
+* export MONGO_BACKUP_PATH <br>
+* export PATH=$PATH:MONGO_BACKUP_PATH/bin
+
+
+* MONGO_DATABASE_NAME="The name of the database you want to backup"
+* export MONGO_DATABASE_NAME <br>
+* export PATH=$PATH:MONGO_DATABASE_NAME/bin
+
+h2. Usage
+
+
+Add the line in the crontab file to your crontab and change the path where the file is located depending on your preferences 
+The backup is done daily at 2 am everyday
+The backup files will be saved in the $MONGO_BACKUP_PATH
