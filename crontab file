@@ -1,0 +1,1 @@
+0 2 * * * /bin/bash /home/automating_backup.sh > /home/backup/mongodbbackup.log
