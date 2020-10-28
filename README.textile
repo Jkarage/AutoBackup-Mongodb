@@ -17,7 +17,7 @@ h2. The Variables (Mysql database)
 h2. Put these in the .bashrc file in your root directory(after modifying).
 
 
-* MPNGO_USERNAME="yourmongodbusername" <br>
+* MONGO_USERNAME="yourmongodbusername" <br>
 * export MONGO_USERNAME <br>
 * export PATH=$PATH:MONGO_USERNAME/bin <br>
 
