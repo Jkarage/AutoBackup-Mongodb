@@ -5,7 +5,7 @@ h1. Mongodb Database backup automator
 * The script uses the following variables which are placed in the .bashrc file(you can use your own method to create permanent variables)
 
 
-h2. The Variables (Mysql database)
+h2. The Variables
 
 
 * MONGO_USERNAME
