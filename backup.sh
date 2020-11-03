@@ -5,6 +5,7 @@ TODAY=`date +"%d%b%Y"`
  
 HOST='localhost'
 PORT='27017'
+DBAUTHDB='admin'
  
 # Create a directory where backups are stored
 mkdir -p ${MONGO_BACKUP_PATH}
@@ -13,7 +14,7 @@ mkdir -p ${MONGO_BACKUP_PATH}
 echo "Starting Backup for database - ${MONGO_DATABASE_NAME}"
 
 # Using the mongodump tool to dump the database into a file
-mongodump --host ${HOST} --port ${PORT} --db ${MONGO_DATABASE_NAME} --username ${MONGO_USERNAME} --password ${MONGO_PASSWD} --out ${MONGO_BACKUP_PATH}/${MONGO_DATABASE_NAME}_${TODAY}/
+mongodump --host ${HOST} --port ${PORT} --db ${MONGO_DATABASE_NAME} --username ${MONGO_USERNAME} --password ${MONGO_PASSWD} --authenticationDatabase $DBAUTHDB --out ${MONGO_BACKUP_PATH}/${MONGO_DATABASE_NAME}_${TODAY}/
 
 
 # Check if the procedure had an error or not
