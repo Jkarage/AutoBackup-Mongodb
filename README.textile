@@ -27,7 +27,7 @@ h2. Put these in the .bashrc file in your root directory(after modifying).
 * export PATH=$PATH:MONGO_PASSWD/bin <br>
 
 
-* MONGO_BACKUP_PATH=The directory you want to save your backups
+* MONGO_BACKUP_PATH=/$HOME/backups
 * export MONGO_BACKUP_PATH <br>
 * export PATH=$PATH:MONGO_BACKUP_PATH/bin
 
