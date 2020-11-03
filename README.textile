@@ -17,22 +17,22 @@ h2. The Variables
 h2. Put these in the .bashrc file in your root directory(after modifying).
 
 
-* MONGO_USERNAME="yourmongodbusername" <br>
+* MONGO_USERNAME=yourmongodbusername <br>
 * export MONGO_USERNAME <br>
 * export PATH=$PATH:MONGO_USERNAME/bin <br>
 
 
-* MONGO_PASSWD="yourmongodbpassword"
+* MONGO_PASSWD=yourmongodbpassword <br>
 * export MONGO_PASSWD <br>
 * export PATH=$PATH:MONGO_PASSWD/bin <br>
 
 
-* MONGO_BACKUP_PATH="The directory you want to save your backups"
+* MONGO_BACKUP_PATH=The directory you want to save your backups
 * export MONGO_BACKUP_PATH <br>
 * export PATH=$PATH:MONGO_BACKUP_PATH/bin
 
 
-* MONGO_DATABASE_NAME="The name of the database you want to backup"
+* MONGO_DATABASE_NAME=The name of the database you want to backup <br>
 * export MONGO_DATABASE_NAME <br>
 * export PATH=$PATH:MONGO_DATABASE_NAME/bin
 
